@@ -3,9 +3,12 @@
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Data Collection](#data-collection)
+- [Model View](#model-view)
 
 ## Project Overview
+Crunchy Corner, one of India’s largest fast-food restaurant chains, serves millions daily through its 1,000+ outlets across the country. Renowned for offering the largest SKU variety in the industry, Crunchy Corner strives to maintain profitability, enhance efficiency, and deliver exceptional value to its customers. 
 
+This project analyzes Crunchy Corner's business data from 2020–2024 to uncover financial challenges, optimize operations, and ensure sustainable growth using data-driven insights.
 
 ## Data Collection 
 **The Crunchy Corner Business data contains 47,7872 observations and 30 attributes.**
@@ -44,3 +47,8 @@ The Data Dictionary is provided below —
 - **Interest Income:** Income earned from investments or bank accounts.
 - **Interest Expense:** Cost of interest paid on loans or borrowed capital.
 - **Net Profit:** The final profit after deducting all expenses, taxes, and one-off items from gross profit.
+
+## Model View (Star Schema ⭐)
+For Crunchy Corner’s extensive dataset, consisting of 2 fact tables and 9 dimension tables, we have implemented the Star Schema approach, which is an effective model for organizing and analyzing large volumes of data.
+
+![image](https://github.com/user-attachments/assets/d0c0cae0-2330-4084-a280-60a867b54924)
