@@ -56,3 +56,8 @@ The data is already clean. We don't need to perform data cleaning.
 For Crunchy Corner’s extensive dataset, consisting of 2 fact tables and 9 dimension tables, we have implemented the Star Schema approach, which is an effective model for organizing and analyzing large volumes of data.
 
 ![image](https://github.com/user-attachments/assets/d0c0cae0-2330-4084-a280-60a867b54924)
+
+## Business Metrics 
+
+## DAX 
+
