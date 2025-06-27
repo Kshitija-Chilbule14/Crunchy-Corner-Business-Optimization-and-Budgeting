@@ -1,1 +1,1 @@
-# Power BI Case Study: Sales Performance Dashboard 📊
+# Power BI Case Study: Crunchy Corner Business Optimization and Budgeting 📊
