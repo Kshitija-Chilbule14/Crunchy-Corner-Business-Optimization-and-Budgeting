@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Data Collection](#data-collection)
+- [Data Cleaning](#data-cleaning)
 - [Model View](#model-view)
 
 ## Project Overview
@@ -47,6 +48,9 @@ The Data Dictionary is provided below —
 - **Interest Income:** Income earned from investments or bank accounts.
 - **Interest Expense:** Cost of interest paid on loans or borrowed capital.
 - **Net Profit:** The final profit after deducting all expenses, taxes, and one-off items from gross profit.
+
+## Data Cleaning 
+The data is already clean. We don't need to perform data cleaning. 
 
 ## Model View (Star Schema ⭐)
 For Crunchy Corner’s extensive dataset, consisting of 2 fact tables and 9 dimension tables, we have implemented the Star Schema approach, which is an effective model for organizing and analyzing large volumes of data.
