@@ -4,7 +4,7 @@
 - [Project Overview](#project-overview)
 - [Data Collection](#data-collection)
 - [Data Cleaning](#data-cleaning)
-- [Model View](#model-view)
+- [Data Modelling](#data-modelling)
 
 ## Project Overview
 Crunchy Corner, one of India’s largest fast-food restaurant chains, serves millions daily through its 1,000+ outlets across the country. Renowned for offering the largest SKU variety in the industry, Crunchy Corner strives to maintain profitability, enhance efficiency, and deliver exceptional value to its customers. 
@@ -52,7 +52,8 @@ The Data Dictionary is provided below —
 ## Data Cleaning 
 The data is already clean. We don't need to perform data cleaning. 
 
-## Model View (Star Schema ⭐)
+## Data Modelling
+##  (Star Schema ⭐)
 For Crunchy Corner’s extensive dataset, consisting of 2 fact tables and 9 dimension tables, we have implemented the Star Schema approach, which is an effective model for organizing and analyzing large volumes of data.
 
 ![image](https://github.com/user-attachments/assets/d0c0cae0-2330-4084-a280-60a867b54924)
