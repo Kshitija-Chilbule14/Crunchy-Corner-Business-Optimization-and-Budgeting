@@ -1,7 +1,7 @@
-# Power BI Case Study: Crunchy Corner Business Optimization and Budgeting 📊
-
+# Power BI Case Study: Crunchy Corner's financial Performance Analysis
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [Objective](#objective)
 - [Data Collection](#data-collection)
 - [Data Cleaning](#data-cleaning)
 - [Data Modelling](#data-modelling)
@@ -10,6 +10,15 @@
 Crunchy Corner, one of India’s largest fast-food restaurant chains, serves millions daily through its 1,000+ outlets across the country. Renowned for offering the largest SKU variety in the industry, Crunchy Corner strives to maintain profitability, enhance efficiency, and deliver exceptional value to its customers. 
 
 This project analyzes Crunchy Corner's business data from 2020–2024 to uncover financial challenges, optimize operations, and ensure sustainable growth using data-driven insights.
+
+## Objective 
+The primary objective of this project is to design an interactive Power BI dashboard that enables Crunchy Corner to monitor and evaluate its financial performance across the years 2020–2024. The dashboard will serve as a comprehensive decision-support tool to:
+
+**1. Track Key Financial Metrics –** Provide a clear overview of revenue, expenses, profit margins, and other critical financial indicators.
+
+**2. Optimize Business Operations –** Identify cost-saving opportunities, underperforming areas, and operational inefficiencies.
+
+**3. Enhance Financial Planning and Budgeting –** Support data-driven budgeting strategies, resource allocation, and long-term planning for sustainable growth.
 
 ## Data Collection 
 **The Crunchy Corner Business data contains 47,7872 observations and 30 attributes.**
