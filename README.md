@@ -71,3 +71,58 @@ For Crunchy Corner’s extensive dataset, consisting of 2 fact tables and 9 dime
 
 ## DAX 
 
+1. Net Revenue (Actual Data)
+
+```
+a NR = SUM(Actual[Net Revenue])
+```
+
+2. Gross Profit (Actual Data)
+
+```
+a GP = SUM(Actual[Gross Profit])
+```
+
+3. Ebitda (Actual Data)
+
+```
+a Ebitda = SUM(Actual[Ebitda])
+```
+
+4. PAT (Profit After TAX / Net Profit for Actual Data)
+```
+a PAT = SUM(Actual[Net Profit])
+```
+
+5. Volume (Actual Data)
+```
+a vol = SUM(Actual[Volume Mt])
+```
+
+6. Net Revenue (Budget Data)
+```
+b NR = SUM(Budget[Net Revenue])
+```
+
+7. Gross Profit (Budget Data)
+```
+b Gross Profit = SUM(Budget[Gross Profit])
+```
+
+8. Ebitda (Budget Data)
+```
+b Ebitda = SUM(Budget[Ebitda])
+```
+
+9. PAT (Profit After TAX /  Net Profit)
+```
+b PAT = SUM(Budget[Net Profit])
+```
+
+10. Volume (Budget Data)
+```
+b vol = SUM(Budget[Volume Mt])
+```
+
+11. 
+
