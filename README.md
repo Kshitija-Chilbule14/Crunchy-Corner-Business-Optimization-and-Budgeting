@@ -130,9 +130,27 @@ Last Year PAT YTD = CALCULATE([PAT YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Da
 **5. Volume**
 ```
 a vol = SUM(Actual[Volume Mt])
+
+b vol = SUM(Budget[Volume Mt])
+
+Last Year VOL = CALCULATE([a vol],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % VOL = DIVIDE(([a vol]-[Last Year VOL]),[Last Year VOL],0)
+
+VOL YTD = TOTALYTD([a vol],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year VOL YTD = CALCULATE([VOL YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
 **6. Total Number of SKUs**
 ```
 No. of SKU = CALCULATE(COUNT(Dim_Product[Product_Id]))
+
+Last Year SKU = CALCULATE([No. of SKU],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % SKU = DIVIDE(([No. of SKU]-[Last Year SKU]),[Last Year SKU],0)
+
+SKU YTD = TOTALYTD([No. of SKU],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year SKU YTD = CALCULATE([SKU YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
 
