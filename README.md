@@ -71,45 +71,68 @@ For Crunchy Corner’s extensive dataset, consisting of 2 fact tables and 9 dime
 
 ## DAX 
 
-**1. Net Revenue (Actual Data)**
+**1. Net Revenue**
 ```
 a NR = SUM(Actual[Net Revenue])
+
+b NR = SUM(Budget[Net Revenue])
+
+Last Year NR = CALCULATE([a NR],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % NR = DIVIDE(([a NR]-[Last Year NR]),[Last Year NR],0)
+
+NR YTD = TOTALYTD([a NR],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year NR YTD = CALCULATE([NR YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
-**2. Gross Profit (Actual Data)**
+**2. Gross Profit**
 ```
 a GP = SUM(Actual[Gross Profit])
+
+b GP = SUM(Budget[Gross Profit])
+
+Last Year GP = CALCULATE([a GP],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % GP = DIVIDE(([a GP]-[Last Year GP]),[Last Year GP],0)
+
+GP YTD = TOTALYTD([a GP],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year GP YTD = CALCULATE([GP YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
-**3. Ebitda (Actual Data)**
+**3. Ebitda**
 ```
 a Ebitda = SUM(Actual[Ebitda])
+
+b Ebitda = SUM(Budget[Ebitda])
+
+Last Year EBITDA = CALCULATE([a Ebitda],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % EBITDA = DIVIDE(([a Ebitda]-[Last Year EBITDA]),[Last Year EBITDA],0)
+
+EBITDA YTD = TOTALYTD([a Ebitda],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year EBITDA YTD = CALCULATE([EBITDA YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
-**4. PAT (Profit After TAX / Net Profit for Actual Data)**
+**4. PAT (Profit After TAX / Net Profit)**
 ```
 a PAT = SUM(Actual[Net Profit])
+
+b PAT = SUM(Budget[Net Profit])
+
+Last Year PAT = CALCULATE([a PAT],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % PAT = DIVIDE(([a PAT]-[Last Year PAT]),[Last Year PAT],0)
+
+PAT YTD = TOTALYTD([a PAT],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year PAT YTD = CALCULATE([PAT YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
-**5. Volume (Actual Data)**
+**5. Volume**
 ```
 a vol = SUM(Actual[Volume Mt])
 ```
-**6. Net Revenue (Budget Data)**
+**6. Total Number of SKUs**
 ```
-b NR = SUM(Budget[Net Revenue])
+No. of SKU = CALCULATE(COUNT(Dim_Product[Product_Id]))
 ```
-**7. Gross Profit (Budget Data)**
-```
-b Gross Profit = SUM(Budget[Gross Profit])
-```
-**8. EBITDA (Budget Data)**
-```
-b Ebitda = SUM(Budget[Ebitda])
-```
-**9. PAT (Profit After TAX /  Net Profit)**
-```
-b PAT = SUM(Budget[Net Profit])
-```
-**10. Volume (Budget Data)**
-```
-b vol = SUM(Budget[Volume Mt])
-```
-**11. Total Number of SKUs**
-```
+
