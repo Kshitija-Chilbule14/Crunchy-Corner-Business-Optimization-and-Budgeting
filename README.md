@@ -111,3 +111,5 @@ b PAT = SUM(Budget[Net Profit])
 ```
 b vol = SUM(Budget[Volume Mt])
 ```
+**11. Total Number of SKUs**
+```
