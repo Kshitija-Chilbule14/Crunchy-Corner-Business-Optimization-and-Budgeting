@@ -154,3 +154,85 @@ SKU YTD = TOTALYTD([No. of SKU],Dim_Date[Month End_Date],ALL(Dim_Date))
 Last Year SKU YTD = CALCULATE([SKU YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
 
+**7. Raw Material Cost**
+```
+RM = CALCULATE(SUM(Actual[Raw Material]))*-1
+
+Last Year RM = CALCULATE([a RM],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % RM = DIVIDE(([a RM]-[Last Year RM]),[Last Year RM],0)
+
+RM YTD = TOTALYTD([a RM],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year RM YTD = CALCULATE([RM YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+```
+
+**8. Trade and Discount**
+```
+Trade & Disc = CALCULATE(SUM(Actual[Total T & Disc])*-1)
+
+Last Year T&D = CALCULATE([a Trade & Disc],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % T&D = DIVIDE(([a Trade & Disc]-[Last Year T&D]),[Last Year T&D],0)
+
+T&D YTD = TOTALYTD([a Trade & Disc],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year T&D YTD = CALCULATE([T&D YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+```
+
+**9. Marketing Cost**
+
+```
+a Mkt = CALCULATE(SUM(Actual[Marketing])*-1)
+
+Last Year MKT = CALCULATE([a Mkt],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % MKT = DIVIDE(([a Mkt]-[Last Year MKT]),[Last Year MKT],0)
+
+MKT YTD = TOTALYTD([a Mkt],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year MKT YTD = CALCULATE([MKT YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+```
+
+**10. Fixed and Variable Cost**
+```
+a F&V = CALCULATE(SUM(Actual[Total Fixed & Variable Cost])*-1)
+
+Last Year F&V = CALCULATE([a F&V],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % F&V = DIVIDE(([a F&V Cost]-[Last Year F&V]),[Last Year F&V],0)
+
+F&V YTD = TOTALYTD([a F&V Cost],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year F&V YTD = CALCULATE([F&V YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+```
+
+**11. General and Administrative Cost**
+```
+a g&a = SUM(Actual[G&A])*-1
+
+Last Year G&A = CALCULATE([a g&a],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % G&A = DIVIDE(([a g&a]-[Last Year G&A]),[Last Year G&A],0)
+
+G&A YTD = TOTALYTD([a g&a],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year G&A YTD = CALCULATE([G&A YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+```
+
+**12. Sales and Distribution Cost**
+```
+a s&d Cost = SUM(Actual[S&D])*-1
+
+Last Year S&D = CALCULATE([a s&d],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+
+YoY % S&D = DIVIDE(([a s&d]-[Last Year S&D]),[Last Year S&D],0)
+
+S&D YTD = TOTALYTD([a s&d],Dim_Date[Month End_Date],ALL(Dim_Date))
+
+Last Year S&D YTD = CALCULATE([S&D YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
+```
+
+
+**
+
