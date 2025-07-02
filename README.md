@@ -232,7 +232,3 @@ S&D YTD = TOTALYTD([a s&d],Dim_Date[Month End_Date],ALL(Dim_Date))
 
 Last Year S&D YTD = CALCULATE([S&D YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
-
-
-**
-
