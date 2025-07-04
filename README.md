@@ -1,4 +1,4 @@
-# Power BI Case Study: Crunchy Corner's financial Performance Analysis
+# Power BI Case Study: Crunchy Corner's Financial Performance Analysis 🍜
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Objective](#objective)
@@ -242,7 +242,8 @@ Last Year S&D YTD = CALCULATE([S&D YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Da
 
 ![3](https://github.com/user-attachments/assets/43c71ff7-83ea-4985-b6b9-b0b56ad1f9ff)
 
-![4](https://github.com/user-attachments/assets/1b61d2a9-6922-4100-a3a4-3976e0307a69)
+![4](https://github.com/user-attachments/assets/cce9b81c-0933-4970-978b-88cd247d9570)
+
 
 ## Insights
 
