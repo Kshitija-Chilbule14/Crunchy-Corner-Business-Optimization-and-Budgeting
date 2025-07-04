@@ -5,6 +5,8 @@
 - [Data Collection](#data-collection)
 - [Data Cleaning](#data-cleaning)
 - [Data Modelling](#data-modelling)
+- [Business Metrics](#business-metrics)
+- [Dashboard Preview](#dashboard-preview)
 
 ## Project Overview
 Crunchy Corner, one of India’s largest fast-food restaurant chains, serves millions daily through its 1,000+ outlets across the country. Renowned for offering the largest SKU variety in the industry, Crunchy Corner strives to maintain profitability, enhance efficiency, and deliver exceptional value to its customers. 
@@ -232,3 +234,19 @@ S&D YTD = TOTALYTD([a s&d],Dim_Date[Month End_Date],ALL(Dim_Date))
 
 Last Year S&D YTD = CALCULATE([S&D YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Date].[Date]))
 ```
+
+## Dashboard Preview
+![1](https://github.com/user-attachments/assets/ea4b6abb-3c08-40c5-b814-45e1d30553a1)
+
+![2](https://github.com/user-attachments/assets/328d4e5a-7e5b-4b26-8292-db03bf469931)
+
+![3](https://github.com/user-attachments/assets/43c71ff7-83ea-4985-b6b9-b0b56ad1f9ff)
+
+![4](https://github.com/user-attachments/assets/1b61d2a9-6922-4100-a3a4-3976e0307a69)
+
+## Insights
+
+## Recommendations
+
+## Conclusion
+
