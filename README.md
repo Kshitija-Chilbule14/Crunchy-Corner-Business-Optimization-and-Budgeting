@@ -5,8 +5,11 @@
 - [Data Collection](#data-collection)
 - [Data Cleaning](#data-cleaning)
 - [Data Modelling](#data-modelling)
-- [Business Metrics](#business-metrics)
+- [Important Business Metrics](#important-business-metrics)
+- [DAX](#dax)
 - [Dashboard Preview](#dashboard-preview)
+- [Insights](#insights)
+- [Recommendations](#recommendations)
 
 ## Project Overview
 Crunchy Corner, one of India’s largest fast-food restaurant chains, serves millions daily through its 1,000+ outlets across the country. Renowned for offering the largest SKU variety in the industry, Crunchy Corner strives to maintain profitability, enhance efficiency, and deliver exceptional value to its customers. 
@@ -69,7 +72,53 @@ For Crunchy Corner’s extensive dataset, consisting of 2 fact tables and 9 dime
 
 ![image](https://github.com/user-attachments/assets/d0c0cae0-2330-4084-a280-60a867b54924)
 
-## Business Metrics 
+## Key Financial Metrics 
+**1. Total Number of SKUs (Stock Keeping Unit):** A unique code given to each product by businesses to help track inventory and manage orders. Crunchy Corner holds the distinction of having the largest SKU variety in the industry.
+
+**2. COGS(Cost of Goods Sold):** COGS represents the direct costs a company pays to make the products it sells, such as raw materials, labor, and production costs. It is subtracted from total sales to find out how much profit the company makes from selling its goods.
+
+**3. Gross Profit (GP):** Gross Profit is the money a company makes from selling its products after subtracting the cost of making those products (COGS). It shows how efficiently the company is producing and selling its goods. Gross Profit is calculated by subtracting the Cost of Goods Sold (COGS) from Net Revenue.
+
+✨Formula:
+**GP=Net Revenue−COGS**
+
+**4. Net Revenue:** Net Revenue is the money a company keeps after subtracting costs like marketing, distribution, discounts, and other expenses from its total sales. It gives a clearer picture of the company’s real earnings, which can be used for operations, taxes, and profit.
+
+**Note:** Total revenue is not the same as Net revenue.
+
+Total Revenue refers to the total amount of money a company earns from its sales before any deductions.
+
+Net Revenue is the amount remaining after subtracting different costs. It represents the actual revenue a company retains after these deductions.
+
+**5. EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization):** EBITDA is derived by subtracting operating expenses (like selling, marketing, and administrative costs) from Gross Profit. It reflects the company’s profitability from its core operations, excluding non-operational and non-cash items.
+
+✨Formula:
+**EBITDA=Gross Profit−Operating Expenses**
+
+**6. PAT (Profit After Tax):** PAT is the final profit figure, showing the earnings available to the shareholders. It is derived by subtracting all non-operating expenses (such as taxes, interest, and depreciation) from EBITDA.
+
+✨Formula:
+**PAT=EBITDA−Interest−Taxes−Depreciation and Amortization**
+
+**7. Volume:** Volume refers to the total quantity of products sold or the amount of business activity carried out in a given period. In terms of sales, it indicates how many units of a product were sold, helping to assess market demand and business performance.
+
+**8. Raw Material Cost:** Raw Material Costs for Crunchy Corner include the expenses incurred in procuring the basic ingredients required for food preparation. This includes the cost of fresh produce, meats, packaging materials, spices, and other necessary raw materials to ensure high-quality meals are consistently served to customers.
+
+**9. Trade and Discount Cost:** Trade and Discount Cost refers to the financial outlay Crunchy Corner spends on promotional offers, discounts, and deals to attract customers or partners. This can include seasonal discounts, bundle offers, or loyalty incentives designed to boost sales and customer retention.
+
+**10.Marketing Cost:** Marketing Cost encompasses the expenses Crunchy Corner invests in advertising, brand promotions, digital campaigns, and other marketing activities aimed at raising brand awareness, reaching new customers, and retaining loyal ones. This could include social media ads, TV commercials, billboards, and promotional events.
+
+**11.Fixed and Variable Costs:**
+
+**Fixed Costs:** These are the expenses that do not change regardless of the restaurant’s sales volume. For Crunchy Corner, fixed costs include rent for restaurant locations, salaries for management and permanent staff, and utility bills that are constant over time.
+
+**Variable Costs:** These are expenses that fluctuate depending on the volume of sales. For Crunchy Corner, variable costs include raw materials, and transportation costs that vary based on the number of meals sold and orders processed.
+
+**12. General and Administrative Costs:**
+General and Administrative (G&A) Costs for Crunchy Corner involve overhead expenses necessary for running the business. These costs include office expenses, salaries for corporate staff, legal fees, insurance, and other administrative functions that support the overall operations of the company but are not directly tied to food production or sales.
+
+**13. Sales and Distribution Costs:**
+Sales and Distribution Costs include the expenses incurred in delivering products to customers and managing sales. This includes the costs of transportation, delivery services, and the expenses related to running the sales process at each restaurant. These costs ensure that products are efficiently distributed to meet customer demand.
 
 ## DAX 
 
@@ -245,9 +294,31 @@ Last Year S&D YTD = CALCULATE([S&D YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Da
 ![4](https://github.com/user-attachments/assets/cce9b81c-0933-4970-978b-88cd247d9570)
 
 
-## Insights
+## Key Insights
+
+**1. Year-Over-Year Trends (2020–2024):**
+- **Highest Revenue:** FY 2023 saw a peak revenue of ₹30.8M, with the third quarter being the most profitable.
+- **Top Month:** August 2023 recorded the highest monthly revenue of ₹12.4M.
+
+**2. Regional Performance:**
+
+- **Top-Performing State:** Uttar Pradesh contributed ₹193.33M in net revenue, highlighting its strategic importance.
+
+- **Underperforming State:** Tamil Nadu’s revenue stood at ₹3.72M, indicating potential areas for improvement.
+
+**3. Channel Contribution:**
+Crunchy Corner operates across 9 distinct channels. Online sales and bulk orders emerged as high-growth areas, while direct sales faced challenges in certain regions.
+
+**4. Cost Optimization Opportunities:**
+- **Marketing Costs:** Identified high expenditure on campaigns with low ROI.
+- **COGS Reduction:** Potential to optimize supplier contracts and streamline production processes.
 
 ## Recommendations
 
-## Conclusion
+## Conclusions
+Through data analysis and Power BI dashboards, we identified:
+- Significant growth opportunities in underperforming states like Tamil Nadu.
+- The need for better budget allocation to reduce high trade spend and marketing costs.
+- Product-level insights for optimizing SKU turnover and reducing COGS.
 
+This project delivers actionable insights to help **Crunchy Corner** refine its **business strategies** and maintain its leadership in the fast-food industry.
