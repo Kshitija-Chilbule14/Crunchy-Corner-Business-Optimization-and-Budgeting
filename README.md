@@ -5,11 +5,12 @@
 - [Data Collection](#data-collection)
 - [Data Cleaning](#data-cleaning)
 - [Data Modelling](#data-modelling)
-- [Important Business Metrics](#important-business-metrics)
+- [Key Financial Metrics](#key-financial-metrics)
 - [DAX](#dax)
 - [Dashboard Preview](#dashboard-preview)
-- [Insights](#insights)
+- [Key Insights](#key-insights)
 - [Recommendations](#recommendations)
+- [Conclusion](#conclusion)
 
 ## Project Overview
 Crunchy Corner, one of India’s largest fast-food restaurant chains, serves millions daily through its 1,000+ outlets across the country. Renowned for offering the largest SKU variety in the industry, Crunchy Corner strives to maintain profitability, enhance efficiency, and deliver exceptional value to its customers. 
@@ -296,29 +297,108 @@ Last Year S&D YTD = CALCULATE([S&D YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Da
 
 ## Key Insights
 
-**1. Year-Over-Year Trends (2020–2024):**
-- **Highest Revenue:** FY 2023 saw a peak revenue of ₹30.8M, with the third quarter being the most profitable.
-- **Top Month:** August 2023 recorded the highest monthly revenue of ₹12.4M.
+#### **Year-wise analysis (2020 to 2024):**
+- The highest Net Revenue was recorded in the financial year 2023.
+- On analyzing the quarterly Net Revenue for 2023, it is clear that the company reached its peak revenue of 30.8M in Quarter 3.
+- Within Quarter 3, the month of August stood out, achieving the highest Net Revenue of 12.4M.
 
-**2. Regional Performance:**
+**Note:** Below is the visualization chart for the Income Statement Flow from Net Revenue (NR) to Profit After Tax (PAT). This flow outlines how a company’s revenue is transformed into its final profit through the subtraction of various costs and expenses at different levels.
 
-- **Top-Performing State:** Uttar Pradesh contributed ₹193.33M in net revenue, highlighting its strategic importance.
+![image](https://github.com/user-attachments/assets/c8d566ce-eb24-48e8-a83b-bcd205792c45)
 
-- **Underperforming State:** Tamil Nadu’s revenue stood at ₹3.72M, indicating potential areas for improvement.
+#### **State-wise Performance:**
+Crunchy Corner operates across seven states in India, including Uttar Pradesh (UP), Maharashtra (MH), Gujarat (GUJ), Karnataka, West Bengal (Calcutta), and Tamil Nadu. 
 
-**3. Channel Contribution:**
-Crunchy Corner operates across 9 distinct channels. Online sales and bulk orders emerged as high-growth areas, while direct sales faced challenges in certain regions.
+Observations reveal that Uttar Pradesh (UP) contributes the highest Net Revenue of 193.33M, while Tamil Nadu records the lowest Net Revenue contribution of 3.72M among all the states where Crunchy Corner operates.
 
-**4. Cost Optimization Opportunities:**
-- **Marketing Costs:** Identified high expenditure on campaigns with low ROI.
-- **COGS Reduction:** Potential to optimize supplier contracts and streamline production processes.
+#### **Distribution Channel Analysis**
+Crunchy Corner utilizes nine distinct distribution channels to sell its products: Direct Sales, Bulk Sales, Culinary Service, Distributor, External Sales, Domestic Sales, Online Sales, Others, and MFG Sales. Let’s identify which distribution channel contributes the highest Net Revenue.
+
+As observed, Direct Sales contribute the most to the Net Revenue, followed closely by Bulk Sales.
+
+#### **Cluster Head Analysis**
+Crunchy Corner, being a large fast-food distribution chain, assigns Cluster Heads to manage and oversee operations across different regions, ensuring efficient business functioning and optimized performance. Let’s now analyze the Net Revenue by Cluster Heads to gain valuable insights into Crunchy Corner’s overall performance under each cluster head.
+
+It appears that under Cluster Head Umar, the highest Net Revenue is being generated, indicating strong performance and efficient management strategies being implemented by Umar.
+
+#### **Category-wise Analysis**
+As Crunchy Corner is a renowned fast-food restaurant chain with the largest SKU base in the industry, it offers products across nine different categories. Let’s now analyze the Net Revenue by SKU category to understand which categories contribute the most to the company’s overall revenue.
+
+As observed, the Protein Pack category generates the highest Net Revenue, followed by Fresh Fare and Country Fries, contributing significantly to Crunchy Corner’s overall revenue.
+
+#### **Cost Analysis**
+Now that we’ve completed the analysis of Crunchy Corner’s overall performance, let’s dive deeper into the cost analysis. By examining various costs such as raw material costs, marketing expenses, sales and distribution costs, and fixed and variable costs, we can gain a clearer understanding of the factors impacting profitability. This will allow us to identify areas for cost optimization, improve operational efficiency, and develop strategies to enhance overall financial performance in the long term.
+
+Below is the Cost Analysis Funnel Chart, which visualizes the various costs incurred by Crunchy Corner. The chart breaks down key cost categories, providing a clear view of how expenses.
+
+![image](https://github.com/user-attachments/assets/68d3500e-ec35-4558-b931-1a9f7d4f2ab8)
+
+#### **Marketing Cost Analysis**
+As we can observe, the top-performing category, Protein Pack, is also responsible for generating the highest marketing cost, which is in line with the increased efforts to promote and drive sales in this high-revenue category.
+
+#### **Actual VS Budget Insights** 
+In this problem statement, we are provided with both actual data and the target/budget of the company. This dual dataset allows us to compare and evaluate the company’s performance against the set goals, identifying any variances. Let’s deep dive into it —
+
+Firstly, let’s analyze YOY Net Revenue for both actual and budget data
+```
+NR — Net Revenue (Actual)
+
+B NR — Net Revenue (Budget)
+
+YOY NR B% — YOY NR % (Budget)
+```
+- In 2021 and 2022, the actual NR is closer to the budget, reflecting better alignment with financial projections.
+- In 2023, actual NR not only fails to meet the budget but also reflects a dip in performance, as shown by the steep YoY decline.
+- 2024 continues to show a gap, but the negative YoY change indicates a gradual performance improvement.
+
+Now, let’s analyze and compare the Year-over-Year (YoY) Net Revenue for actual and budgeted data across categories.
+- Protein Pack is the highest revenue-generating category with Actual NR at 221M and Budgeted NR at 259M. However, there is a significant -14.42% YoY decline in Budgeted NR, indicating potential challenges in sustaining growth.
+- Fresh Fare and Country Fries categories exhibit modest revenue levels (82M and 76M, respectively), and their YoY Budget NR% % indicates steady growth (+8.57% and +11.81%, respectively).
+- Cake and Sweet Crust categories exhibit the lowest net revenue levels with declining YoY Budget percentages of -14.28% and -9.87%, respectively.
 
 ## Recommendations
+#### 1. The company needs to improve the performance in underperforming regions like Tamil Nadu and certain other states, which showed significantly lower Net Revenue
 
-## Conclusions
-Through data analysis and Power BI dashboards, we identified:
-- Significant growth opportunities in underperforming states like Tamil Nadu.
-- The need for better budget allocation to reduce high trade spend and marketing costs.
-- Product-level insights for optimizing SKU turnover and reducing COGS.
+**Actionable Insights**
+- Conduct market surveys to understand customer behavior in these regions.
+- Re-evaluate pricing, promotions, and menu localization.
+- Pilot targeted campaigns with regional influencers or discounts.
 
+#### 2. Expand high-yield channels such as Bulk Sales and Online Sales, which are contributing significantly to overall revenue.
+
+**Actionable Insights**
+- Strengthen logistics and supply chain operations to support bulk orders.
+- Enhance the online ordering platform with a personalized user experience and targeted promotions.
+- Promote subscription-based meal plans for loyal online customers.
+
+#### 3. Optimize the SKU portfolio by focusing on high-performing categories like Protein Pack and Fresh Fare while eliminating or repackaging low-performing SKUs.
+
+**Actionable Insights**
+- Apply Pareto analysis to prioritize top-revenue-generating SKUs.
+- Repackage underperforming SKUs into bundled offers to boost appeal.
+- Conduct A/B testing to refine product offerings, pricing, and packaging strategies.
+
+#### 4. Control rising costs, especially in Raw Materials and Marketing, which significantly impact profit margins.
+
+**Actionable Insights**
+- Negotiate long-term contracts with suppliers for better pricing and supply stability.
+- Monitor marketing ROI across channels and redirect budget to high-conversion campaigns.
+- Use historical data to improve demand forecasting and reduce excess inventory.
+
+#### 5. Bridge the gap between actual performance and budget forecasts to improve financial planning and agility.
+
+**Actionable Insights**
+- Incorporate time-series forecasting models for more accurate projections.
+- Implement rolling budgets with quarterly updates based on performance trends.
+- Involve cross-functional teams in setting realistic budget targets.
+
+#### 6. Enhance performance tracking and support for regional Cluster Heads to drive consistent growth across regions.
+
+**Actionable Insights**
+- Share strategies and practices from high-performing Cluster Heads like Umar.
+- Establish a KPI-driven performance incentive plan for all regional managers.
+- Conduct regular training sessions on dashboard usage and data interpretation.
+
+## Conclusion
 This project delivers actionable insights to help **Crunchy Corner** refine its **business strategies** and maintain its leadership in the fast-food industry.
+
