@@ -290,7 +290,7 @@ Last Year S&D YTD = CALCULATE([S&D YTD],SAMEPERIODLASTYEAR(Dim_Date[Month End_Da
 
 ![2](https://github.com/user-attachments/assets/328d4e5a-7e5b-4b26-8292-db03bf469931)
 
-![3](https://github.com/user-attachments/assets/43c71ff7-83ea-4985-b6b9-b0b56ad1f9ff)
+![3](https://github.com/user-attachments/assets/b59d3281-10a8-4fd8-938c-2c64fa0decc1)
 
 ![4](https://github.com/user-attachments/assets/cce9b81c-0933-4970-978b-88cd247d9570)
 
