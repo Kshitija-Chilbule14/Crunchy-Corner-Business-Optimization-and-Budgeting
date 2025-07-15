@@ -1,4 +1,4 @@
-# Power BI Case Study: Crunchy Corner's Financial Performance Analysis 🍜
+# Power BI Case Study: Crunchy Corner's Business Optimization and Budgeting 🍜
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Objective](#objective)
